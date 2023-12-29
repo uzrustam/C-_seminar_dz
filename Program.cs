@@ -51,20 +51,37 @@
 // показывает наибольшую цифру числа.
 
 
-int num = new Random().Next(10,100);
-//Console.WriteLine(num);
-int num1 = num/ 10;
-//Console.WriteLine(num1);
-int num2 = num % 10;
-if (num1 > num2)
+// int num = new Random().Next(10,100);
+// //Console.WriteLine(num);
+// int num1 = num/ 10;
+// //Console.WriteLine(num1);
+// int num2 = num % 10;
+// if (num1 > num2)
+// {
+//     Console.WriteLine($"{num} => {num1}");
+// }
+// else if (num2 > num1)
+// {
+//     Console.WriteLine($"{num} => {num2}");
+// }
+// else 
+// {
+//     Console.WriteLine($"{num} => Оба равны");
+// }
+
+
+
+// Задача 4: Напишите программу, которая на вход принимает 
+// натуральное число N, а на выходе показывает 
+// его цифры через запятую.
+
+
+
+int number = new Random().Next(10000);
+string s = Convert.ToString(number);
+Console.Write($"{s} => ");
+for (int i = 0; i < s.Length; i++)
 {
-    Console.WriteLine($"{num} => {num1}");
+       Console.Write($"{s[i]}, ");
 }
-else if (num2 > num1)
-{
-    Console.WriteLine($"{num} => {num2}");
-}
-else 
-{
-    Console.WriteLine($"{num} => Оба равны");
-}
+Console.Write("\b\b ");
